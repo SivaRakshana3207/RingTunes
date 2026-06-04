@@ -3,11 +3,165 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingTunes</title>
   <link href="./dist/output.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="m-0 p-0">
+    <!-- Banner -->
+    <header class=" p-10 bg-[url('/assets/bg.PNG')]">
+        <div>
+            <h1 class="text-white font-semibold">RingTunes</h1>
+        </div>
+        <div class="flex flex-col justify-center items-center text-center mt-5">
+            <h1 class="text-3xl font-bold text-white">Download <span class="text-pink-600">RingTunes</span> <br><span class="text-sm">in Seconds...</span></h1>
+            <input type="text" placeholder="Search by artist, movie names, etc." class="bg-white min-w-md mx-auto mt-3 p-2 rounded shadow outline-none">
+        </div>
+    </header>
+
+    <div class="mx-10 my-10 flex flex-col md:flex-row gap-8">
+
+    <!-- Filter Section -->
+    <section class="bg-gray-200 max-w-md p-5 space-y-4 h-fit">
+        <h1 class="font-semibold mb-3">Filters</h1>
+        <select name="" id="" class="bg-white p-2 rounded w-full outline-none">
+            <option value="">Select Language</option>
+            <option value="">Tamil</option>
+            <option value="">Telugu</option>
+            <option value="">Malayalam</option>
+        </select>
+        <select name="" id="" class="bg-white p-2 rounded w-full outline-none">
+            <option value="">Select Artist</option>
+            <option value="">Anirudh Ravichander</option>
+            <option value="">Sid Sriram</option>
+            <option value="">Karthik</option>
+            <option value="">Hiphop Tamizha (Adhi)</option>
+        </select>
+        <input type="text" placeholder="Movie Title" class="bg-white p-2 rounded w-full outline-none">
+        <button class="bg-rose-600 w-full p-2 rounded text-white hover:bg-rose-500">Search</button>
+    </section>
+
+    <div>
+        <!-- Latest Tamil Ringtones -->
+        <section class="max-w-md">
+            <div class="flex items-center justify-between mb-4">
+                <h1 class="font-semibold text-lg">Latest Tamil Ringtones</h1>
+
+                <span class="bg-gradient-to-r from-rose-100 to-pink-100 text-rose-600 border border-rose-200 px-3 py-1 rounded-full text-xs font-semibold shadow-sm">
+                    Double Tap to Download
+                </span>
+            </div>
+
+            <div class="flex space-x-4 mt-3">
+
+                <!-- Card 1 -->
+                <div class="music-card bg-[url('/assets/Teddy.jpg')] bg-cover bg-center w-24 h-24 rounded flex items-center justify-center cursor-pointer">
+                    <audio class="audio" src="audio/Nanbiye-1-Downringtone.com.mp3"></audio>
+
+                    <svg class="playIcon" width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5.33333 11.45V4.54997C5.33333 4.36108 5.39999 4.20275 5.53333 4.07497C5.66666 3.94719 5.82222 3.8833 5.99999 3.8833C6.05555 3.8833 6.11388 3.89163 6.17499 3.9083C6.23611 3.92497 6.29444 3.94997 6.34999 3.9833L11.7833 7.4333C11.8833 7.49997 11.9583 7.5833 12.0083 7.6833C12.0583 7.7833 12.0833 7.88886 12.0833 7.99997C12.0833 8.11108 12.0583 8.21663 12.0083 8.31663C11.9583 8.41663 11.8833 8.49997 11.7833 8.56663L6.34999 12.0166C6.29444 12.05 6.23611 12.075 6.17499 12.0916C6.11388 12.1083 6.05555 12.1166 5.99999 12.1166C5.82222 12.1166 5.66666 12.0527 5.53333 11.925C5.39999 11.7972 5.33333 11.6389 5.33333 11.45Z" class="fill-icon-primary"></path></svg>
+
+                    <svg class="pauseIcon hidden" width="24" height="24" viewBox="0 0 16 16">
+                        <path d="M4 12V4H12V12H4Z"/>
+                    </svg>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="music-card bg-[url('/assets/bullet.jpg')] bg-cover bg-center w-24 h-24 rounded flex items-center justify-center cursor-pointer">
+                    <audio class="audio" src="audio/Bullet Song-Downringtone.com.mp3"></audio>
+
+                    <svg class="playIcon" width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5.33333 11.45V4.54997C5.33333 4.36108 5.39999 4.20275 5.53333 4.07497C5.66666 3.94719 5.82222 3.8833 5.99999 3.8833C6.05555 3.8833 6.11388 3.89163 6.17499 3.9083C6.23611 3.92497 6.29444 3.94997 6.34999 3.9833L11.7833 7.4333C11.8833 7.49997 11.9583 7.5833 12.0083 7.6833C12.0583 7.7833 12.0833 7.88886 12.0833 7.99997C12.0833 8.11108 12.0583 8.21663 12.0083 8.31663C11.9583 8.41663 11.8833 8.49997 11.7833 8.56663L6.34999 12.0166C6.29444 12.05 6.23611 12.075 6.17499 12.0916C6.11388 12.1083 6.05555 12.1166 5.99999 12.1166C5.82222 12.1166 5.66666 12.0527 5.53333 11.925C5.39999 11.7972 5.33333 11.6389 5.33333 11.45Z" class="fill-icon-primary"></path></svg>
+
+                    <svg class="pauseIcon hidden" width="24" height="24" viewBox="0 0 16 16">
+                        <path d="M4 12V4H12V12H4Z"/>
+                    </svg>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="music-card bg-[url('/assets/don.PNG')] bg-cover bg-center w-24 h-24 rounded flex items-center justify-center cursor-pointer">
+                    <audio class="audio" src="audio/Don - Jalabulajangu Song.mp3"></audio>
+
+                    <svg class="playIcon" width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5.33333 11.45V4.54997C5.33333 4.36108 5.39999 4.20275 5.53333 4.07497C5.66666 3.94719 5.82222 3.8833 5.99999 3.8833C6.05555 3.8833 6.11388 3.89163 6.17499 3.9083C6.23611 3.92497 6.29444 3.94997 6.34999 3.9833L11.7833 7.4333C11.8833 7.49997 11.9583 7.5833 12.0083 7.6833C12.0583 7.7833 12.0833 7.88886 12.0833 7.99997C12.0833 8.11108 12.0583 8.21663 12.0083 8.31663C11.9583 8.41663 11.8833 8.49997 11.7833 8.56663L6.34999 12.0166C6.29444 12.05 6.23611 12.075 6.17499 12.0916C6.11388 12.1083 6.05555 12.1166 5.99999 12.1166C5.82222 12.1166 5.66666 12.0527 5.53333 11.925C5.39999 11.7972 5.33333 11.6389 5.33333 11.45Z" class="fill-icon-primary"></path></svg>
+
+                    <svg class="pauseIcon hidden" width="24" height="24" viewBox="0 0 16 16">
+                        <path d="M4 12V4H12V12H4Z"/>
+                    </svg>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="music-card bg-[url('/assets/natpethunai.jpg')] bg-cover bg-center w-24 h-24 rounded flex items-center justify-center cursor-pointer">
+                    <audio class="audio" src="audio/vengamavan_ringtone.mp3"></audio>
+
+                    <svg class="playIcon" width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5.33333 11.45V4.54997C5.33333 4.36108 5.39999 4.20275 5.53333 4.07497C5.66666 3.94719 5.82222 3.8833 5.99999 3.8833C6.05555 3.8833 6.11388 3.89163 6.17499 3.9083C6.23611 3.92497 6.29444 3.94997 6.34999 3.9833L11.7833 7.4333C11.8833 7.49997 11.9583 7.5833 12.0083 7.6833C12.0583 7.7833 12.0833 7.88886 12.0833 7.99997C12.0833 8.11108 12.0583 8.21663 12.0083 8.31663C11.9583 8.41663 11.8833 8.49997 11.7833 8.56663L6.34999 12.0166C6.29444 12.05 6.23611 12.075 6.17499 12.0916C6.11388 12.1083 6.05555 12.1166 5.99999 12.1166C5.82222 12.1166 5.66666 12.0527 5.53333 11.925C5.39999 11.7972 5.33333 11.6389 5.33333 11.45Z" class="fill-icon-primary"></path></svg>
+
+                    <svg class="pauseIcon hidden" width="24" height="24" viewBox="0 0 16 16">
+                        <path d="M4 12V4H12V12H4Z"/>
+                    </svg>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Romantic Ringtones -->
+        <section class="mt-4 max-w-md">
+            <div class="flex items-center justify-between mb-4">
+                <h1 class="font-semibold text-lg">Romantic Ringtones</h1>
+
+                <span class="bg-gradient-to-r from-rose-100 to-pink-100 text-rose-600 border border-rose-200 px-3 py-1 rounded-full text-xs font-semibold shadow-sm">
+                    Double Tap to Download
+                </span>
+            </div>
+
+            <div class="flex space-x-4 mt-3">
+
+                <!-- Card 1 -->
+                <div class="music-card bg-[url('/assets/Marandhu-Poche.jpg')] bg-cover bg-center w-24 h-24 rounded flex items-center justify-center cursor-pointer">
+                    <audio class="audio" src="audio/Marandhu poche whatsapp status.mp3"></audio>
+
+                    <svg class="playIcon" width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5.33333 11.45V4.54997C5.33333 4.36108 5.39999 4.20275 5.53333 4.07497C5.66666 3.94719 5.82222 3.8833 5.99999 3.8833C6.05555 3.8833 6.11388 3.89163 6.17499 3.9083C6.23611 3.92497 6.29444 3.94997 6.34999 3.9833L11.7833 7.4333C11.8833 7.49997 11.9583 7.5833 12.0083 7.6833C12.0583 7.7833 12.0833 7.88886 12.0833 7.99997C12.0833 8.11108 12.0583 8.21663 12.0083 8.31663C11.9583 8.41663 11.8833 8.49997 11.7833 8.56663L6.34999 12.0166C6.29444 12.05 6.23611 12.075 6.17499 12.0916C6.11388 12.1083 6.05555 12.1166 5.99999 12.1166C5.82222 12.1166 5.66666 12.0527 5.53333 11.925C5.39999 11.7972 5.33333 11.6389 5.33333 11.45Z" class="fill-icon-primary"></path></svg>
+
+                    <svg class="pauseIcon hidden" width="24" height="24" viewBox="0 0 16 16">
+                        <path d="M4 12V4H12V12H4Z"/>
+                    </svg>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="music-card bg-[url('/assets/aradhya.jpg')] bg-cover bg-center w-24 h-24 rounded flex items-center justify-center cursor-pointer">
+                    <audio class="audio" src="audio/Aradhya-Ringtone.mp3"></audio>
+
+                    <svg class="playIcon" width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5.33333 11.45V4.54997C5.33333 4.36108 5.39999 4.20275 5.53333 4.07497C5.66666 3.94719 5.82222 3.8833 5.99999 3.8833C6.05555 3.8833 6.11388 3.89163 6.17499 3.9083C6.23611 3.92497 6.29444 3.94997 6.34999 3.9833L11.7833 7.4333C11.8833 7.49997 11.9583 7.5833 12.0083 7.6833C12.0583 7.7833 12.0833 7.88886 12.0833 7.99997C12.0833 8.11108 12.0583 8.21663 12.0083 8.31663C11.9583 8.41663 11.8833 8.49997 11.7833 8.56663L6.34999 12.0166C6.29444 12.05 6.23611 12.075 6.17499 12.0916C6.11388 12.1083 6.05555 12.1166 5.99999 12.1166C5.82222 12.1166 5.66666 12.0527 5.53333 11.925C5.39999 11.7972 5.33333 11.6389 5.33333 11.45Z" class="fill-icon-primary"></path></svg>
+
+                    <svg class="pauseIcon hidden" width="24" height="24" viewBox="0 0 16 16">
+                        <path d="M4 12V4H12V12H4Z"/>
+                    </svg>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="music-card bg-[url('/assets/bachelor.PNG')] bg-cover bg-center w-24 h-24 rounded flex items-center justify-center cursor-pointer">
+                    <audio class="audio" src="audio/adiye_bachelor.mp3"></audio>
+
+                    <svg class="playIcon" width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5.33333 11.45V4.54997C5.33333 4.36108 5.39999 4.20275 5.53333 4.07497C5.66666 3.94719 5.82222 3.8833 5.99999 3.8833C6.05555 3.8833 6.11388 3.89163 6.17499 3.9083C6.23611 3.92497 6.29444 3.94997 6.34999 3.9833L11.7833 7.4333C11.8833 7.49997 11.9583 7.5833 12.0083 7.6833C12.0583 7.7833 12.0833 7.88886 12.0833 7.99997C12.0833 8.11108 12.0583 8.21663 12.0083 8.31663C11.9583 8.41663 11.8833 8.49997 11.7833 8.56663L6.34999 12.0166C6.29444 12.05 6.23611 12.075 6.17499 12.0916C6.11388 12.1083 6.05555 12.1166 5.99999 12.1166C5.82222 12.1166 5.66666 12.0527 5.53333 11.925C5.39999 11.7972 5.33333 11.6389 5.33333 11.45Z" class="fill-icon-primary"></path></svg>
+
+                    <svg class="pauseIcon hidden" width="24" height="24" viewBox="0 0 16 16">
+                        <path d="M4 12V4H12V12H4Z"/>
+                    </svg>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="music-card bg-[url('/assets/pavalamalli.PNG')] bg-cover bg-center w-24 h-24 rounded flex items-center justify-center cursor-pointer">
+                    <audio class="audio" src="audio/Pavazha Malli - Shruti Haasan.mp3"></audio>
+
+                    <svg class="playIcon" width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5.33333 11.45V4.54997C5.33333 4.36108 5.39999 4.20275 5.53333 4.07497C5.66666 3.94719 5.82222 3.8833 5.99999 3.8833C6.05555 3.8833 6.11388 3.89163 6.17499 3.9083C6.23611 3.92497 6.29444 3.94997 6.34999 3.9833L11.7833 7.4333C11.8833 7.49997 11.9583 7.5833 12.0083 7.6833C12.0583 7.7833 12.0833 7.88886 12.0833 7.99997C12.0833 8.11108 12.0583 8.21663 12.0083 8.31663C11.9583 8.41663 11.8833 8.49997 11.7833 8.56663L6.34999 12.0166C6.29444 12.05 6.23611 12.075 6.17499 12.0916C6.11388 12.1083 6.05555 12.1166 5.99999 12.1166C5.82222 12.1166 5.66666 12.0527 5.53333 11.925C5.39999 11.7972 5.33333 11.6389 5.33333 11.45Z" class="fill-icon-primary"></path></svg>
+
+                    <svg class="pauseIcon hidden" width="24" height="24" viewBox="0 0 16 16">
+                        <path d="M4 12V4H12V12H4Z"/>
+                    </svg>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
