@@ -47,6 +47,24 @@ cards.forEach(card => {
         }
     });
 
+    // Download button click
+    document.querySelectorAll(".download-btn").forEach(btn => {
+        btn.addEventListener("click", (e) => {
+            e.stopPropagation(); // Prevent play/pause
+
+            const card = btn.closest(".bg-white");
+            const audio = card.querySelector(".audio");
+
+            const link = document.createElement("a");
+            link.href = audio.src;
+            link.download = audio.src.split("/").pop();
+
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    });
+
     // Double click: Download audio
     card.addEventListener("dblclick", () => {
         const link = document.createElement("a");
