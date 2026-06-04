@@ -238,6 +238,9 @@
   .max-w-md {
     max-width: var(--container-md);
   }
+  .max-w-sm {
+    max-width: var(--container-sm);
+  }
   .min-w-md {
     min-width: var(--container-md);
   }
